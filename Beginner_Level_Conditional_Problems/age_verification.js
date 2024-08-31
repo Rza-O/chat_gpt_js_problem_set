@@ -1,1 +1,0 @@
-//Age Verification: Write a program that checks if a person is eligible to vote based on their age (18 or older).
