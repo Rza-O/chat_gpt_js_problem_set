@@ -2,8 +2,12 @@
 
 let array = [2, 5, 9, 6];
 
-let sumArray = array.reduce(function(x,y){
-    return x + y;
-}, 0);
+function sumOfArray(arr){
+    let sum = 0;
+    for(let i in arr){
+        sum = sum + arr[i];
+    }
+    return sum
+}
 
-console.log(sumArray);
+console.log(sumOfArray(array));

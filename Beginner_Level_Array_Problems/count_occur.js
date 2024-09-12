@@ -1,19 +1,18 @@
 // Count Occurrences: Write a program that counts how many times a specific element appears in an array.
 
-let a = [1, 2, 3, 4, 2, 3];
+function findSimilar(arr){
+    let count = {};
+    for(let i of arr){
+        if(count[i] = count[i]){
+            count[i]++
+        }
+        else(
+            count[i] = 1
+        )
+    }
+    return count;
+}
 
-let count = a.reduce(function(x, y){
-    // if(x[y]) {
-    //     x[y]++;
-    // }
-    // else(
-    //     x[y] = 1
-    // )
-    // return x;
-    return (
-        x[y] ? ++x[y] : (x[y] = 1), // this is re written in ternary operator 
-        x
-    );
-}, {}) // empty curly bracket counts as the initial accumulator
 
-console.log(count)
+let array = [1, 2, 3, 4, 2, 3, 3, 3];
+console.log(findSimilar(array));
