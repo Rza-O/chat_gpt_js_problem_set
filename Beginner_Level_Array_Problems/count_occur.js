@@ -3,12 +3,16 @@
 function findSimilar(arr){
     let count = {};
     for(let i of arr){
+        //with ternary operator
+        count[i] = count[i]? count[i] + 1 : 1;
+
+// with full conditional
         if(count[i] = count[i]){
             count[i]++
         }
-        else(
+        else{
             count[i] = 1
-        )
+        }
     }
     return count;
 }
